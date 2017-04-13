@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void sendNotification(){
         RemoteInput remoteInput = new RemoteInput.Builder(REMOTE_INPUT_KEY)
-                .setLabel("Reply")
+                .setLabel("Contesta")
                 .build();
 
         Intent intent = new Intent(this, MainActivity.class);
@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         Notification notification = new Notification.Builder(getApplicationContext())
-                .setContentTitle("New message!")
-                .setContentText("Hi!")
+                .setContentTitle("Nuevo mensaje!")
+                .setContentText("Hola usuario!!")
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setActions(actionNotification)
                 .build();
